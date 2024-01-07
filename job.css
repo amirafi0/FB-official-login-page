@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(223, 209, 209);
+}
+
+.container{
+   
+    width: 500px;
+    background-color: rgb(254, 253, 251);
+    padding: 12px;
+    margin: auto;
+    margin-top: 16px;
+    border-radius: 10px;
+    box-shadow:4px 3px 5px rgba(1 , 1, 1, 0.1) ;
+}
+
+.selection{
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(38, 9, 143);
+    margin: 20px;
+}
+
+
+.form-container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size:15px ;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    padding: 6px 10px ;
+    border:1px solid #ccc ;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline-color: blue;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    border: transparent solid 1px;
+    color: #ccc;
+    font-size: 15px;
+    transition: 0.2s ease-in;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(132, 138, 143);
+    color: rgb(74, 9, 203);
+    transition: 0.2s ease-out;
+}
+
+.address-box{
+    grid-column: 1/ 2 span;
+}
+
+
+
